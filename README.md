@@ -4,7 +4,7 @@
 
 ## About
 
-The sequel to 100 Bytes Theme ([https://wordpress.org/themes/100-bytes/](https://github.com/MarcArmengou/100-bytes)). We have gained 100 bytes of weight. Maybe gaining weight is a good idea here. My doctor didn't say anything about this.
+The sequel to 100 Bytes Theme ([https://github.com/MarcArmengou/200-bytes/](https://github.com/MarcArmengou/100-bytes)). We have gained 100 bytes of weight. Maybe gaining weight is a good idea here. My doctor didn't say anything about this.
 
 The idea is simple, make a theme that 2x looks good everywhere, with as little CSS code as possible. In this case the limit is 200 Bytes of CSS information.
 
