@@ -12,7 +12,7 @@ Actually the compressed CSS code contains 180 bytes of information, but 200 byte
 
 - No functions or styles for comments.
 - No functions or styles for menus.
-- Yes styles to read well everywhere.
+- Yes styles to read 2x well everywhere.
 
 ## Idea
 
