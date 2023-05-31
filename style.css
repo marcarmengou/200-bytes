@@ -1,0 +1,34 @@
+/*
+Theme Name: 200 Bytes
+Theme URI: https://github.com/MarcArmengou/200-bytes
+Author: Marc Armengou
+Author URI: https://www.marcarmengou.com/
+Description: The sequel to 100 Bytes Theme (https://wordpress.org/themes/100-bytes/). We have gained 100 bytes of weight. Maybe gaining weight is a good idea here. My doctor didn't say anything about this.
+Idea: Inspired by this: https://dev.to/swyx/100-bytes-of-css-to-look-great-everywhere-19pd
+Tags: blog, one-column, full-width-template
+Version: 1.0.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 200-bytes
+Copyright: 2023 Marc Armengou
+Tested up to: 6.2
+Requires PHP: 5.6
+*/
+
+html {
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 3em 0 1em;
+}
+
+p,ul,ol {
+  margin-bottom: 2em;
+  color: #1d1d1d;
+  font-family: sans-serif;
+}
