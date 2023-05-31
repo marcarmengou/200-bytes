@@ -1,10 +1,12 @@
-# 200 Byes
+# 200 Bytes
+
+200 Bytes WordPress Theme - 200 bytes of CSS to  look 2x great everywhere
 
 ## About
 
 The sequel to 100 Bytes Theme (https://wordpress.org/themes/100-bytes/). We have gained 100 bytes of weight. Maybe gaining weight is a good idea here. My doctor didn't say anything about this.
 
-The idea is simple, make a theme that looks good everywhere, with as little CSS code as possible. In this case the limit is 200 Bytes of CSS information.
+The idea is simple, make a theme that 2x looks good everywhere, with as little CSS code as possible. In this case the limit is 200 Bytes of CSS information.
 
 Actually the compressed CSS code contains 180 bytes of information, but 200 bytes sounds better.
 
