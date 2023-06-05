@@ -14,9 +14,9 @@ endif;
 add_action('after_setup_theme', 'bytes200_setup');
 
 // Enqueue style.css
-function theme_enqueue_styles() {
-  wp_enqueue_style( 'main-css', get_stylesheet_uri() );
+function bytes200_enqueue_styles() {
+  wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
 }
+add_action( 'wp_enqueue_scripts', 'bytes200_enqueue_styles' );
 
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 ?>
