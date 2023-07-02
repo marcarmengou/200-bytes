@@ -4,7 +4,7 @@ Tags: blog, one-column, full-width-template
 Requires at least: 5.7
 Tested up to: 6.2
 Requires PHP: 5.6
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ This is a minimalist WordPress theme that uses just 200 bytes of CSS for its des
 
 == Changelog ==
 
-= 1.0.7 =
+= 1.0.8 =
 * Reorganized code in index.php
 * Added 404.php
 
