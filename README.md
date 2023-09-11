@@ -20,7 +20,7 @@ Inspired by this: https://dev.to/swyx/100-bytes-of-css-to-look-great-everywhere-
 
 ## Requirements
 
-- WordPress 6.2+
+- WordPress 6.3+
 - PHP 5.6+
 - License: GPLv2 or later
 
