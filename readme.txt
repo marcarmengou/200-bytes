@@ -2,9 +2,9 @@
 Contributors: Marc Armengou
 Tags: blog, one-column, full-width-template
 Requires at least: 5.6
-Tested up to: 6.3.1
+Tested up to: 6.4.2
 Requires PHP: 5.6
-Stable tag: 1.0.9
+Stable tag: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,11 @@ This is a minimalist WordPress theme that uses just 200 bytes of CSS for its des
 
 == Changelog ==
 
+= 1.1.0 =
+* 2024-13-01
+* Compatibility: WordPress 5.6 - WordPress 6.4.2
+* Compatibility: PHP 5.6 - PHP 8.3
+
 = 1.0.9 =
 * 2023-11-09
 * Compatibility: WordPress 5.6 - WordPress 6.3.1
@@ -36,17 +41,6 @@ This is a minimalist WordPress theme that uses just 200 bytes of CSS for its des
 
 = 1.0.6 =
 * Fix name prefixing, theme_enqueue_styles().
-
-= 1.0.5 =
-* Some corrections
-
-= 1.0.4 =
-* Some corrections
-
-= 1.0.3 =
-* Some corrections
-
-= 1.0.2 =
 * Some corrections
 
 = 1.0 =
