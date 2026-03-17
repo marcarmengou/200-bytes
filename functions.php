@@ -1,22 +1,22 @@
 <?php
-if (!function_exists('bytes200_setup')) :
-  function bytes200_setup() {
-      load_theme_textdomain('200-bytes');
-      add_theme_support('automatic-feed-links');
-      add_theme_support('title-tag');
-      add_theme_support('post-thumbnails');
-      register_nav_menus(array('primary' => __('Primary Menu', '200-bytes')));
-      add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
-      add_theme_support('customize-selective-refresh-widgets');
-      add_theme_support('responsive-embeds');
+if ( ! function_exists( 'bytes200_setup' ) ) :
+function bytes200_setup() {
+    load_theme_textdomain( '200-bytes' );
+
+    add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'title-tag' );
+    add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption', 'style', 'script' ) );
+    add_theme_support( 'responsive-embeds' );
 }
 endif;
-add_action('after_setup_theme', 'bytes200_setup');
+add_action( 'after_setup_theme', 'bytes200_setup' );
 
-// Enqueue style.css
 function bytes200_enqueue_styles() {
-  wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
+    wp_enqueue_style( 
+        'bytes200-style', 
+        get_stylesheet_uri(), 
+        array(), 
+        file_exists( get_stylesheet_directory() . '/style.css' ) ? filemtime( get_stylesheet_directory() . '/style.css' ) : false 
+    );
 }
 add_action( 'wp_enqueue_scripts', 'bytes200_enqueue_styles' );
-
-?>

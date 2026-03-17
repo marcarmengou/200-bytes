@@ -1,32 +1,33 @@
 <?php
-get_header();
-if (have_posts()) {
-    while (have_posts()) {
-        the_post(); ?>
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <p><?php the_excerpt(); ?></p>
-        </div>
+get_header(); ?>
+<main>
+<?php if ( have_posts() ) :
+    while ( have_posts() ) : the_post(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <h2><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
+            <?php the_excerpt(); ?>
+        </article>
         <hr>
-    <?php }
+    <?php endwhile;
 
-    if (get_previous_posts_link() || get_next_posts_link()) { ?>
-        <p>
-        <?php 
-        if (get_previous_posts_link()) {
-            previous_posts_link(__('Newer posts', '200-bytes'));
-        }
-        if (get_previous_posts_link() && get_next_posts_link()) {
-            echo ' | ';
-        }
-        if (get_next_posts_link()) {
-            next_posts_link(__('Older posts', '200-bytes'));
-        }
-        ?>
-        </p>
-    <?php }
-} else { ?>
-    <p><?php echo __('No content to display', '200-bytes'); ?></p>
-<?php }
-get_footer();
-?>
+    if ( get_previous_posts_link() || get_next_posts_link() ) : ?>
+        <nav aria-label="<?php echo esc_attr__( 'Posts navigation', '200-bytes' ); ?>">
+            <?php
+            if ( get_previous_posts_link() ) { 
+                echo get_previous_posts_link( esc_html__( 'Newer posts', '200-bytes' ) ); 
+            }
+            if ( get_previous_posts_link() && get_next_posts_link() ) { 
+                echo '<span aria-hidden="true"> | </span>'; 
+            }
+            if ( get_next_posts_link() ) { 
+                echo get_next_posts_link( esc_html__( 'Older posts', '200-bytes' ) ); 
+            }
+            ?>
+        </nav>
+    <?php endif;
+
+else : ?>
+    <p><?php esc_html_e( 'No content to display', '200-bytes' ); ?></p>
+<?php endif; ?>
+</main>
+<?php get_footer(); ?>
