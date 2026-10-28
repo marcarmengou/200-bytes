@@ -2,9 +2,9 @@
 Contributors: Marc Armengou
 Tags: blog, one-column, full-width-template
 Requires at least: 5.6
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,23 +19,30 @@ This is a minimalist WordPress theme that uses just 200 bytes of CSS for its des
 3. Click on the 'Activate' button to use your new theme right away.
 
 == Copyright ==
-200 Bytes, Copyright 2023-2026 Marc Armengou
+200 Bytes, Copyright 2024 Marc Armengou
 200 Bytes is distributed under the terms of the GNU GPL
 
 == Changelog ==
 
+= 1.1.2 =
+* 2026-10-28
+* Compatibility: WordPress 5.6 - WordPress 7.1
+* Semantics/HTML5: added header and footer landmarks.
+* Semantics/HTML5: use h1 for the 404 page title.
+* Cleanup: removed the unnecessary load_theme_textdomain() call and the redundant file_exists() check.
+* Cleanup: output pagination links with previous_posts_link() and next_posts_link().
+* Updated Tested up to.
+
 = 1.1.1 =
 * 2026-03-17
 * Security: Full implementation of "Late Escaping". All dynamic data is escaped at the exact point of rendering.
-* Accessibility: Added mandatory "Skip to content" link for keyboard navigation.
 * Accessibility: Implemented ARIA labels for post navigation and pagination.
 * Semantics: Migrated structure from generic divs to HTML5 semantic elements (<main>, <article>, <nav>).
 * Performance: Implemented filemtime() cache-busting for stylesheet enqueuing.
-* Architecture: Refactored functions.php with strict typing (PHP 8.2+) and modern array syntax.
 * Cleanup: Removed obsolete XFN profile link and modernized header logic.
 
 = 1.1.0 =
-* 2024-13-01
+* 2024-01-13
 * Compatibility: WordPress 5.6 - WordPress 6.4.2
 * Compatibility: PHP 5.6 - PHP 8.3
 

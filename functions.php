@@ -1,8 +1,6 @@
 <?php
 if ( ! function_exists( 'bytes200_setup' ) ) :
 function bytes200_setup() {
-    load_theme_textdomain( '200-bytes' );
-
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'title-tag' );
     add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption', 'style', 'script' ) );
@@ -12,11 +10,11 @@ endif;
 add_action( 'after_setup_theme', 'bytes200_setup' );
 
 function bytes200_enqueue_styles() {
-    wp_enqueue_style( 
-        'bytes200-style', 
-        get_stylesheet_uri(), 
-        array(), 
-        file_exists( get_stylesheet_directory() . '/style.css' ) ? filemtime( get_stylesheet_directory() . '/style.css' ) : false 
+    wp_enqueue_style(
+        'bytes200-style',
+        get_stylesheet_uri(),
+        array(),
+        filemtime( get_stylesheet_directory() . '/style.css' )
     );
 }
 add_action( 'wp_enqueue_scripts', 'bytes200_enqueue_styles' );

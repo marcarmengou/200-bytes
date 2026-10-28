@@ -1,3 +1,4 @@
+<footer>
 <p>
 <?php
 echo wp_kses(
@@ -11,6 +12,7 @@ echo wp_kses(
 );
 ?>
 </p>
+</footer>
 <?php wp_footer(); ?>
 </body>
 </html>

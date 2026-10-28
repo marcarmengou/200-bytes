@@ -13,14 +13,14 @@ get_header(); ?>
     if ( get_previous_posts_link() || get_next_posts_link() ) : ?>
         <nav aria-label="<?php echo esc_attr__( 'Posts navigation', '200-bytes' ); ?>">
             <?php
-            if ( get_previous_posts_link() ) { 
-                echo get_previous_posts_link( esc_html__( 'Newer posts', '200-bytes' ) ); 
+            if ( get_previous_posts_link() ) {
+                previous_posts_link( esc_html__( 'Newer posts', '200-bytes' ) );
             }
-            if ( get_previous_posts_link() && get_next_posts_link() ) { 
-                echo '<span aria-hidden="true"> | </span>'; 
+            if ( get_previous_posts_link() && get_next_posts_link() ) {
+                echo '<span aria-hidden="true"> | </span>';
             }
-            if ( get_next_posts_link() ) { 
-                echo get_next_posts_link( esc_html__( 'Older posts', '200-bytes' ) ); 
+            if ( get_next_posts_link() ) {
+                next_posts_link( esc_html__( 'Older posts', '200-bytes' ) );
             }
             ?>
         </nav>

@@ -8,6 +8,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<header>
 <?php if ( is_front_page() || is_home() ) : ?>
   <h1>
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -21,3 +22,4 @@
     </a>
   </p>
 <?php endif; ?>
+</header>
